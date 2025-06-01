@@ -12,6 +12,8 @@ int main (void) {
         printf("fsh>: ");
         fgets(input,MAX_INPUT,stdin);
 
+        input[strcspn(input, "\n")] = 0;
+
         if (strcmp(input, "exit") == 0) {
             break;
         }
