@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 #define MAX_INPUT 1024
 
 
@@ -9,6 +11,10 @@ int main (void) {
     while(1) {
         printf("fsh>: ");
         fgets(input,MAX_INPUT,stdin);
+
+        if (strcmp(input, "exit") == 0) {
+            break;
+        }
 
         printf("You typed this command: %s \n", input);
     }
