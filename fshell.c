@@ -9,6 +9,8 @@ int main (void) {
     while(1) {
         printf("fsh>: ");
         fgets(input,MAX_INPUT,stdin);
+
+        printf("You typed %s as your command \n", input);
     }
     return 0;
 }
