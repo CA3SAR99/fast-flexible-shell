@@ -10,7 +10,7 @@ int main (void) {
         printf("fsh>: ");
         fgets(input,MAX_INPUT,stdin);
 
-        printf("You typed %s as your command \n", input);
+        printf("You typed this command: %s \n", input);
     }
     return 0;
 }
