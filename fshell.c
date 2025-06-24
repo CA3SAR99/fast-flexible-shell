@@ -15,10 +15,11 @@ int main (void) {
         input[strcspn(input, "\n")] = 0;
 
         if (strcmp(input, "exit") == 0) {
+            printf("Exiting... \n");
             break;
         }
 
-        printf("You typed this command: %s \n", input);
+        printf("Unknown command: %s \n", input);
     }
     return 0;
 }
