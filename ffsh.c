@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
 #define MAX_INPUT 1024
 
-
+void WelcomeMessage(void);
 
 int main (void) {
     char input[MAX_INPUT];
+
+    WelcomeMessage();
 
     while(1) {
         printf("ffsh>: ");
@@ -26,5 +31,12 @@ int main (void) {
         
     }
     return 0;
+}
+
+void WelcomeMessage(void) {
+    printf("=====================================\n");
+    printf("  Welcome to FFSH - Fast & Flexible Shell!\n");
+    printf("  Type 'exit' to quit.\n");
+    printf("=====================================\n\n");
 }
 // work in progess run at your own risk 
