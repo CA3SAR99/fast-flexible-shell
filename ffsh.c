@@ -29,6 +29,19 @@ int main (void) {
             break;
         }
         
+        // Standard way to fork proccesses, duplicates the process, and we let the child execute commands
+        pid_t pid = fork();
+
+        if (pid == 0) {
+            // childPID = 0 
+        }
+        else if (pid > 0) {
+            // parentPID > 0
+        }
+        else {
+            // if fork fails for some reason, output an error
+            perror("fork");
+        }
     }
     return 0;
 }
