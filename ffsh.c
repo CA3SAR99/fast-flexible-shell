@@ -30,6 +30,7 @@ int main (void) {
         }
         
         // Standard way to fork proccesses, duplicates the process, and we let the child execute commands
+        // pid_t is a signed int data type used to store proccess IDs
         pid_t pid = fork();
 
         if (pid == 0) {
@@ -38,7 +39,7 @@ int main (void) {
             break;
         }
         else if (pid > 0) {
-            // parentPID > 0
+            // parentPID > 0 (it will always be above 0)
             return(0);
             break;
         }
