@@ -34,9 +34,13 @@ int main (void) {
 
         if (pid == 0) {
             // childPID = 0 
+            return(0);
+            break;
         }
         else if (pid > 0) {
             // parentPID > 0
+            return(0);
+            break;
         }
         else {
             // if fork fails for some reason, output an error
@@ -52,4 +56,5 @@ void WelcomeMessage(void) {
     printf("  Type 'exit' to quit.\n");
     printf("=====================================\n\n");
 }
-// work in progess run at your own risk 
+
+// work in progess run at your own risk
