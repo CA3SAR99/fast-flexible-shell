@@ -71,6 +71,7 @@ void welcome_message(void) // simple function to display a welcome message
     printf("  Type 'exit' to quit.\n");
     printf("  Type 'cat README.md' to display README\n");
     printf("  Type 'welcome' to display this welcome message again\n");
+    printf("  Developed by Cesare Landi\n");
     printf("=====================================\n\n");
 } // consider making these into string literals in the future if wanting to add custom message function
 
